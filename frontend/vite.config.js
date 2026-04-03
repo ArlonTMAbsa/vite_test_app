@@ -6,6 +6,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default {
   server: {
+    // host: "::",
     port: 8080,
     https: {
       key: fs.readFileSync(path.join(__dirname, 'certs', 'key.pem')),
